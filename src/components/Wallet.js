@@ -32,6 +32,6 @@ export class Wallet extends Component {
     }
 }
 const mstp = state => ({
-    balance: state
+    balance: state.balance
 })
 export default connect(mstp, {deposit, withdraw})(Wallet);
